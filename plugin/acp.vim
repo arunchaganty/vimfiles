@@ -118,7 +118,7 @@ endfunction
 " INITIALIZATION {{{1
 
 "-----------------------------------------------------------------------------
-call s:defineOption('g:acp_enableAtStartup', 1)
+call s:defineOption('g:acp_enableAtStartup', 0)
 call s:defineOption('g:acp_mappingDriven', 0)
 call s:defineOption('g:acp_ignorecaseOption', 1)
 call s:defineOption('g:acp_completeOption', '.,w,b,k')

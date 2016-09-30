@@ -20,7 +20,10 @@ function! VimBuddy()
         let s:vimbuddy_onemore = ""
     endif
 
-    if s:vimbuddy_err != v:errmsg
+    if g:actual_curbuf != bufnr("%")
+        " Not my buffer, sleeping
+        return "|-o"
+    elseif s:vimbuddy_err != v:errmsg
         let v:errmsg = v:errmsg . " "
         let s:vimbuddy_err = v:errmsg
         return ":-("

@@ -5,15 +5,8 @@
 " "hot-keyed". (*)
 function! GenTags()
     !ctags -R .
-    !cscope -bR
-    cscope reset
-endfunction
-
-" Combine these two ultra-frequent tasks into one. You can then alias them
-" to something convinent (like smi)
-function! SuperMakeInstall ()
-    make
-    !sudo make install
+    " !cscope -bR
+    " cscope reset
 endfunction
 
 " A bit of a hack. Use this to open and close the "quickfix" window with one
@@ -22,15 +15,12 @@ let s:qf_toogle = 0
 function! QuickFixToggle ()
     if (s:qf_toogle)
         silent cclose
-        s:qf_toogle = 0
+        let s:qf_toogle = 0
     else
         silent copen
-        s:qf_toogle = 1
+        let s:qf_toogle = 1
     endif
 endfunction
 
-" Use bc -l to evaluate the line in the " buffer
-function! BCEvaluate()
-endfunction
-
+map \q :call QuickFixToggle()<CR>
 

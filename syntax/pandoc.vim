@@ -325,8 +325,7 @@ hi link pdcNewLine		Error
 " For testing
 hi link pdctest		Error
 
-
 " Added by Pranesh S
-set textwidth=80
+"set textwidth=80
 let b:current_syntax = "pandoc"
 

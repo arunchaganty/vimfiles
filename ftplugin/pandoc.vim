@@ -24,7 +24,7 @@ endfunction
 
 function! GetLink() 
   let url = getline(line('.'))
-  python << EOF
+  python3 << EOF
 import re
 import os, subprocess
 m = re.match(r"(\[[^\]]+\]\()?(?P<url>[^(][^\[\]]*[^)])\)?", vim.current.line.strip() )
@@ -40,7 +40,7 @@ endfunction
 
 function! PrintLink() 
   let url = getline(line('.'))
-  python << EOF
+  python3 << EOF
 import re
 import os, subprocess
 m = re.match("(\[[^\]]+\]\()?(?P<url>[^()\[\]]*)\)?", vim.current.line )

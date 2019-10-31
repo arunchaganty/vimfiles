@@ -58,3 +58,5 @@ map ,F                  <Esc>:set foldlevel=100<CR>
 " Map jj for escape
 imap jj <Esc>
 
+" Map \d for diary
+:map <Leader>d <Plug>VimwikiMakeDiaryNote

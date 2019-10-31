@@ -5,3 +5,5 @@ view
 *.swp
 .netrwhist
 .netrwhist~
+.dropbox
+Icon*

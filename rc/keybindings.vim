@@ -60,3 +60,5 @@ imap jj <Esc>
 
 " Map \d for diary
 :map <Leader>d <Plug>VimwikiMakeDiaryNote
+
+:map <Leader>s :Sscratch<CR>

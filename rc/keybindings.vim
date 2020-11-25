@@ -8,8 +8,8 @@
 " Space - Move down a page
 " Backspace - Move up a page
 
-nnoremap <c-j> <ESC>:bn<CR> 
-nnoremap <c-k> <ESC>:bp<CR> 
+nnoremap <c-j> <ESC>:MBEbn<CR> 
+nnoremap <c-k> <ESC>:MBEbp<CR> 
 " Commenting these out in case your instincts tell you to use the arrow
 " keys. Shame on you.
 "nnoremap <up> <ESC>:Explore<CR><ESC><C-W><C-W> 
@@ -58,7 +58,14 @@ map ,F                  <Esc>:set foldlevel=100<CR>
 " Map jj for escape
 imap jj <Esc>
 
-" Map \d for diary
-:map <Leader>d <Plug>VimwikiMakeDiaryNote
+map <Leader>s :Sscratch<CR>
 
-:map <Leader>s :Sscratch<CR>
+" VimWiki keybindings
+map <Leader>wdd <Plug>VimwikiMakeDiaryNote
+map <Leader>wdn <Plug>VimwikiDiaryNextDay
+map <Leader>wdp <Plug>VimwikiDiaryPrevDay
+" Default keybindings 
+" map <Leader>wh <Plug>Vimwiki2HTML
+" map <Leader>whh <Plug>Vimwiki2HTMLBrowse
+
+

@@ -24,7 +24,8 @@ let g:pdf_convert_on_read=1
 
 " vimwiki
 let g:vimwiki_badsyms = ' '
-let g:vimwiki_folding = ''
+let g:vimwiki_folding = 'syntax'
 let g:vimwiki_fold_lists = 0
-let g:vimwiki_list = [{'html_header': '~/.vim/rc/vimwiki.tpl'}]
 
+" FZF
+set rtp+=/usr/local/opt/fzf

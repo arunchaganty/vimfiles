@@ -21,6 +21,11 @@ filetype plugin indent on
 colorscheme xoria256
 syntax on
 
+" Allow loading of local VIMRCs
+set exrc
+" As long as they are owned by me.
+set secure
+
 " Autocmds
 "autocmd BufEnter * :syntax sync fromstart " ensure every file does syntax highlighting (full)
 

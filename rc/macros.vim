@@ -59,6 +59,7 @@ function! InlineEval()
   silent normal `<"*yv`>
   python3 << EOF
 import vim 
+from datetime import datetime as dt 
 expr = vim.eval('@*')
 ans = eval(expr)
 vim.command("normal `<cv`>" + str(ans) + "\n")

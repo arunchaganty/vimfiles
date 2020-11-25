@@ -1,9 +1,10 @@
 = {ydate} =
 
-Summary of the day.
-
-== Tasks ==
-* [ ] List tasks for today.
-
 == Thoughts ==
 * Some thoughts for the day.
+
+== Tasks ==
+* [ ] Sync pending tasks from Remember the Milk.
+* [ ] Write diary entry
+* [ ] Sync pending tasks on Remember the Milk.
+

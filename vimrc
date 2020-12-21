@@ -25,9 +25,3 @@ syntax on
 set exrc
 " As long as they are owned by me.
 set secure
-
-" Autocmds
-"autocmd BufEnter * :syntax sync fromstart " ensure every file does syntax highlighting (full)
-
-" Disable ACP
-"call acp#disable()

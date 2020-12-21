@@ -1,4 +1,4 @@
-set history=1000        " Store a nice long histroy file
+set history=1000        " Store a nice long history file
 set cf                  " Will ask for confirmation instead of failing when quiting from unsaved buffers
 set clipboard+=unnamed  " Shares it with the session's clipboard (in the middle-button click paste
 set hid                 " Don't force save (*) (Let's you switch between buffers)

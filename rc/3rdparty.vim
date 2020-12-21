@@ -27,5 +27,6 @@ let g:vimwiki_badsyms = ' '
 let g:vimwiki_folding = 'syntax'
 let g:vimwiki_fold_lists = 0
 
-" FZF
+" FZF (on Mac and Linux resp.)
 set rtp+=/usr/local/opt/fzf
+set rtp+=/usr/share/doc/fzf/examples/

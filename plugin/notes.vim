@@ -7,7 +7,7 @@ function! VimwikiInteractiveSearch()
   lopen
 endfunction
 
-noremap <Leader>wn <Esc>:e <C-R>=vimwiki#vars#get_wikilocal('path')<CR>
+noremap <Leader>wo <Esc>:e <C-R>=vimwiki#vars#get_wikilocal('path')<CR>
 noremap <Leader>ww :exec ":FZF " . vimwiki#vars#get_wikilocal('path')<CR>
 noremap <Leader>w\ :call VimwikiInteractiveSearch()<CR>
 
@@ -25,5 +25,6 @@ function! VimwikiNewTemplateNote(prompt, prefix)
 endfunction
 
 " Create a new meeting notes
-noremap <Leader>wm :call VimwikiNewTemplateNote("Meeting with? ", "meetings/")<CR>
-noremap <Leader>we :call VimwikiNewTemplateNote("Email to? ", "emails/")<CR>
+noremap <Leader>wm :call VimwikiNewTemplateNote("Meeting with? ", "google/meetings/")<CR>
+noremap <Leader>we :call VimwikiNewTemplateNote("Email to? ", "google/emails/")<CR>
+noremap <Leader>wn :call VimwikiNewTemplateNote("Note about? ", "google/notes/")<CR>

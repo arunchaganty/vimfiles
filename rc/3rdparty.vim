@@ -28,5 +28,4 @@ let g:vimwiki_folding = 'syntax'
 let g:vimwiki_fold_lists = 0
 
 " FZF (on Mac and Linux resp.)
-set rtp+=/usr/local/opt/fzf
-set rtp+=/usr/share/doc/fzf/examples/
+exec "set rtp+=" . $FZF_BASE . "/plugin/fzf.vim"

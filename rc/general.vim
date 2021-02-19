@@ -11,3 +11,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Persistent undo
+let undo_dir=$HOME.'/.vim/undo'
+if !isdirectory(undo_dir)
+  call mkdir(undo_dir, 'p')
+  endif
+  set undofile
+  let &undodir=undo_dir

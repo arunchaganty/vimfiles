@@ -29,3 +29,6 @@ let g:vimwiki_fold_lists = 0
 
 " FZF (on Mac and Linux resp.)
 exec "set rtp+=" . $FZF_BASE . "/plugin/fzf.vim"
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1

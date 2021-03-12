@@ -1,6 +1,3 @@
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim
 [submodule "bundle/open-pdf.vim"]
 	path = bundle/open-pdf.vim
 	url = https://github.com/rhysd/open-pdf.vim

@@ -8,8 +8,8 @@
 " Space - Move down a page
 " Backspace - Move up a page
 
-nnoremap <c-j> <ESC>:MBEbn<CR> 
-nnoremap <c-k> <ESC>:MBEbp<CR> 
+nnoremap <c-j> <ESC>:bn<CR> 
+nnoremap <c-k> <ESC>:bp<CR> 
 " Commenting these out in case your instincts tell you to use the arrow
 " keys. Shame on you.
 "nnoremap <up> <ESC>:Explore<CR><ESC><C-W><C-W> 

@@ -16,6 +16,9 @@ source ~/.vim/rc/3rdparty.vim
 source ~/.vim/rc/keybindings.vim
 source ~/.vim/rc/abbr.vim
 source ~/.vim/rc/macros.vim      " Quick convinence commands
+if filereadable(expand('~/.vim/rc/local.vim'))
+  source ~/.vim/rc/local.vim      " Machine specific source.
+end
 
 filetype plugin indent on
 colorscheme xoria256

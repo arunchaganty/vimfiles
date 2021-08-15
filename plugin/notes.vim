@@ -27,4 +27,4 @@ endfunction
 " Create a new meeting notes
 noremap <Leader>wm :call VimwikiNewTemplateNote("Meeting with? ", "google/meetings/")<CR>
 noremap <Leader>we :call VimwikiNewTemplateNote("Email to? ", "google/emails/")<CR>
-noremap <Leader>wn :call VimwikiNewTemplateNote("Note about? ", "google/notes/")<CR>
+noremap <Leader>wN :call VimwikiNewTemplateNote("Note about? ", "google/notes/")<CR>

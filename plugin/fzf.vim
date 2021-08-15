@@ -1,0 +1,1 @@
+/Users/arunchaganty/homebrew/Cellar/fzf/0.24.4/plugin/fzf.vim

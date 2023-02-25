@@ -8,3 +8,5 @@ view
 .dropbox
 Icon*
 undo/
+# The FZF vim plugin depends on the FZF_PATH.
+plugin/fzf.vim

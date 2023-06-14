@@ -21,10 +21,10 @@ function! VimwikiNewTemplateNote(prompt, prefix)
   endif
 
   let fname = vimwiki#vars#get_wikilocal('path') . a:prefix . strftime("%Y-%m-%d-") . name->tolower()->tr(" ", "-")
-  exec ":edit " .fname . ".wiki"
+  exec ":edit " .fname . vimwiki#vars#get_wikilocal('ext')
 endfunction
 
 " Create a new meeting notes
-noremap <Leader>wm :call VimwikiNewTemplateNote("Meeting with? ", "google/meetings/")<CR>
-noremap <Leader>we :call VimwikiNewTemplateNote("Email to? ", "google/emails/")<CR>
-noremap <Leader>wN :call VimwikiNewTemplateNote("Note about? ", "google/notes/")<CR>
+noremap <Leader>wm :call VimwikiNewTemplateNote("Meeting with? ", "Meetings/")<CR>
+noremap <Leader>we :call VimwikiNewTemplateNote("Email to? ", "Emails/")<CR>
+noremap <Leader>wN :call VimwikiNewTemplateNote("Note about? ", "Notes/")<CR>

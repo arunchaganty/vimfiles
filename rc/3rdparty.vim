@@ -26,9 +26,11 @@ let g:pdf_convert_on_read=1
 let g:vimwiki_badsyms = ' '
 let g:vimwiki_folding = 'syntax'
 let g:vimwiki_fold_lists = 0
+let g:vimwiki_list = [{'path': '~/Documents/Personal', 'syntax': 'markdown', 'ext': '.md'}]
 
 " FZF (on Mac and Linux resp.)
 exec "set rtp+=" . $FZF_BASE . "/plugin/fzf.vim"
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
+
